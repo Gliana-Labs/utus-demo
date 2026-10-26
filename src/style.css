@@ -1,0 +1,33 @@
+:root {
+  --bg: #fbf6ee;
+  --ink: #2b1d14;
+  --mute: #7a6656;
+  --accent: #c2410c;
+  --card: #ffffff;
+  --line: #eadfce;
+  color-scheme: light;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
+.hero { padding: 72px 20px 56px; text-align: center; background: radial-gradient(60% 80% at 50% 0%, #ffe3c2, transparent 70%); }
+.eyebrow { margin: 0; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+h1 { margin: 12px 0 10px; font-size: clamp(36px, 7vw, 60px); line-height: 1.05; letter-spacing: -0.02em; }
+h1 span { color: var(--accent); }
+.lead { max-width: 34rem; margin: 0 auto; color: var(--mute); }
+.cta { display: inline-block; margin-top: 24px; padding: 12px 20px; border-radius: 999px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; }
+main { max-width: 760px; margin: 0 auto; padding: 0 20px 48px; display: grid; gap: 28px; }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+h2 { margin: 0 0 14px; font-size: 20px; }
+.menu ul { list-style: none; margin: 0; padding: 0; }
+.menu li { display: grid; grid-template-columns: 1fr auto; padding: 12px 0; border-top: 1px dashed var(--line); }
+.menu li:first-child { border-top: 0; }
+.name { font-weight: 600; }
+.note { grid-row: 2; font-size: 13px; color: var(--mute); }
+.price { grid-row: 1 / span 2; align-self: center; font-variant-numeric: tabular-nums; font-weight: 600; }
+form { display: grid; gap: 12px; }
+label { display: grid; gap: 6px; font-size: 14px; color: var(--mute); }
+input, textarea { font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fffdf9; color: var(--ink); }
+button { justify-self: start; font: inherit; font-weight: 600; padding: 10px 18px; border: 0; border-radius: 999px; background: var(--ink); color: #fff; cursor: pointer; }
+footer { text-align: center; padding: 24px 20px 40px; font-size: 13px; color: var(--mute); }
+footer a { color: inherit; }

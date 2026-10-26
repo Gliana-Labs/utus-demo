@@ -1,0 +1,14 @@
+{
+  "name": "utus-demo",
+  "private": true,
+  "type": "module",
+  "description": "A tiny Vite site to try Utus Git deploys: import this repo in dashboard.glianalabs.com → Utus Hosting.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^7.3.0"
+  }
+}

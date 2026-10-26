@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toko Kue Bu Sri</title>
+    <meta name="description" content="Kue basah buatan rumah, pesan lewat WhatsApp." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🍰</text></svg>" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="eyebrow">Sejak 1998 · Bandar Lampung</p>
+      <h1>Toko Kue <span>Bu Sri</span></h1>
+      <p class="lead">Kue basah buatan rumah, dibuat pagi ini. Pesan sehari sebelumnya, ambil atau kami antar.</p>
+      <a class="cta" href="#pesan">Pesan sekarang</a>
+    </header>
+
+    <main>
+      <section class="menu" aria-labelledby="menu-title">
+        <h2 id="menu-title">Menu hari ini</h2>
+        <ul id="menu"></ul>
+      </section>
+
+      <section class="order" id="pesan" aria-labelledby="pesan-title">
+        <h2 id="pesan-title">Pesan</h2>
+        <!-- Utus form: every submission lands in the site's Formulir tab. -->
+        <form action="/_utus/form/pesanan" method="POST">
+          <label>Nama <input name="nama" required /></label>
+          <label>No. WhatsApp <input name="whatsapp" inputmode="tel" required /></label>
+          <label>Pesanan <textarea name="pesanan" rows="3" placeholder="2 kotak lapis legit, 1 lusin klepon"></textarea></label>
+          <input name="_gotcha" style="display: none" tabindex="-1" autocomplete="off" />
+          <button>Kirim pesanan</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Dibangun dari GitHub dan diterbitkan oleh <a href="https://utus.dev">Utus</a> · <span id="built"></span></p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
